@@ -1,0 +1,6 @@
+.highlighted {
+    background-color: rgb(251, 251, 255) !important;
+}
+.highlighted > td {
+    background-color: rgb(251, 251, 255) !important;
+}

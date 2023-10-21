@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Better Skyward",
+    "version": "1.0",
+    "description": "Improves Skyward.",
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "css" : ["style.css"],
+          "matches": [
+            "https://REPLACE_ME_WITH_URL/PATH/*"
+          ]
+        }
+      ]
+}
