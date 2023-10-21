@@ -28,9 +28,20 @@ I have no idea how Skyward is versioned or even how to determine if this is comp
 
 ## Usage
 
-### Firefox
+This extension only needs to run on Skyward pages - not every page on the Internet. The Skyward URL must be specified in the extension's manifest file. To determine your correct Skyward URL, visit your school's Skyward login page and check the URL bar on your browser. 
 
-1. Modify `manifest.json` to insert the URL of the skyward instance. The extension only needs permission to modify pages matching that URL pattern, not any other page on the internet. Use `*` to match a set of pages. For example: `https://www.some-school-system.net/scripts/*`
+It will look something vaguely like this:
+`https://www.some-domain.your-district.net/scripts`
+
+The proper URL to put in `manifest.json` would be:
+`https://www.some-domain.your-district.net/scripts/*` (note the `*`, which matches all pages starting with the rest of the URL.)
+
+Open up `manifest.json.template` and type in your URL manually and then save as `manifest.json`.
+
+If you're comfortable with a console, run `./manifest.sh https://www.some-domain.your-district.net/scripts*` to generate a valid `manifest.json` file.
+
+
+### Firefox
 
 1. [Zip the files in this repo](https://extensionworkshop.com/documentation/publish/package-your-extension/). Don't zip the repo folder; zip the files themselves (excluding `.git`).
 
