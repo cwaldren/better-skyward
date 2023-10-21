@@ -71,7 +71,8 @@ const pages = {
     "Score Entry" : assignmentPage,
 };
 
-const page = pages[determinePage()];
+const pageName = determinePage()
+const page = pages[pageName];
 if (page) {
     page();
 }
