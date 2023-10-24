@@ -8,7 +8,7 @@ then
 	exit 1
 fi
 
-sed "s/YOUR_URL_GOES_HERE/foo/g" manifest.json.template > manifest.json
+sed "s/YOUR_URL_GOES_HERE/$1/g" manifest.json.template > manifest.json
 
 echo "manifest.json generated."
 
