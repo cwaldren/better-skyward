@@ -17,7 +17,7 @@ over.
 **Why:**  when scrolling down a list of hundreds of students, you simply need to memorize which checkbox is which since there are no labels. This is solved by labeling the checkboxes. 
 
 
-**What:** adds a new column of checkboxes for marking absense.
+**What:** adds a new column of checkboxes for marking absence.
 
 **Why:** having to type out 'AB' to mark absent is painful. This is why checkboxes exist. Use them!
 
